@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title> CRUD System </title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="form-group m-auto w-75" id="myForm">
+        <div class="form-group">
+            <label>Product Name</label>
+            <input type="text" class="form-control" id="productName" name="proName">
+        </div>
+        <div class="form-group">
+            <label>Product Cost</label>
+            <input type="text" class="form-control" id="productCost" name="proCost">
+        </div>
+        <div class="form-group">
+            <label>Product Company</label>
+            <input type="text" class="form-control" id="productCompany" name="proCompany">
+        </div>
+        <div class="form-group">
+            <label>Product Description</label>
+            <input type="text" class="form-control" id="productDesc" name="proDesc">
+        </div>
+
+        <button class="btn btn-success mt-1" id="myBtn">Add Product</button>
+        <button class="btn btn-warning mt-1 text-white" id="myUpdateBtn" disabled>update</button>
+    </div>
+
+    <hr>
+
+    <div class="form-group m-auto w-75">
+        <label>Search any product</label>
+        <input type="search" class="form-control" name="searchPro" id="searchProduct" onkeyup="searchProduct()">
+    </div>
+
+    <div class="container text-center">
+        <div class="row" id="rowData">
+        </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
